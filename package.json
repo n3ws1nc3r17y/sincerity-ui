@@ -4,8 +4,10 @@
   "description": "react ui library",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --hot --config webpack.dev.conf.js",
-    "build": "webpack --config webpack.build.config.js"
+    "dev": "webpack-dev-server --open --hot --config webpack.dev.config.js",
+    "build": "webpack --config webpack.build.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "browserlists": [
     ">1%",
@@ -25,6 +27,10 @@
     "@babel/core": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "autoprefixer": "^9.6.4",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.0.4",
